@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/walls59"
+    android:layout_height="match_parent"
+    tools:context="vyom.com.androidlock.Settings">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Settings"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <Switch
+        android:id="@+id/switch_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/app_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="App Password"
+        android:layout_alignTop="@+id/switch_password"
+        android:layout_alignLeft="@+id/do_not_disturb"
+        android:layout_alignStart="@+id/do_not_disturb" />
+
+    <TextView
+        android:id="@+id/do_not_disturb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="31dp"
+        android:text="Do Not Disturb"
+        android:layout_below="@+id/switch_password"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignBottom="@+id/do_not_disturb"
+        android:layout_alignLeft="@+id/switch_password"
+        android:layout_alignStart="@+id/switch_password" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="Map Switch"
+        android:layout_below="@+id/do_not_disturb"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignEnd="@+id/switch2"
+        android:layout_alignRight="@+id/switch2"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="Double Click Setting"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignEnd="@+id/switch3"
+        android:layout_alignRight="@+id/switch3"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="35dp"
+        android:text="Record List" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignEnd="@+id/switch4"
+        android:layout_alignRight="@+id/switch4"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="Version"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:id="@+id/switch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0.0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignRight="@+id/switch5"
+        android:layout_alignEnd="@+id/switch5"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:background="@mipmap/home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_marginBottom="28dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:background="@mipmap/user"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:background="@mipmap/soscontact"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/switch6"
+        android:layout_toStartOf="@+id/switch6" />
+</RelativeLayout>
